@@ -6,3 +6,6 @@ An illustration tutorial website designed for beginners and more advanced learne
 # What We Learned
 
 # Credits
+- Andrea To Chip
+- Rey Rivera
+- Emmanuel III Jayme

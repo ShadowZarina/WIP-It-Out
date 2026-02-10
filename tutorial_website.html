@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD SECTION OF CODE -->
+<head>
+
+  <!-- Meta Information and Title -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <title>WIP-It-Out</title>
+
+  <!-- Styling -->
+  <style>
+      header {background-color: blue;}
+  </style>
+
+</head>
+
+<!-- BODY SECTION OF CODE -->
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="tutorial-title">Wip-It-Out</h1>
+      <p class="tutorial-overview">WIP (Work in Progress) It Out is a website dedicated to introducing its viewers to the wonders of art while providing tutorials for simple art fundamentals. It offers beginner to intermediate tutorials for concepts in arts and crafts.</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="Wip-It-Out.html#tutorials">Lessons</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HOME WIREFRAME: Home, About, Tutorials Preview -->
+    <section id="home" class="home">
+      <!-- Large home/feature image placeholder -->
+      <img src="images/home-placeholder.jpg" alt="Home image" />
+    </section>
+
+    <section class="about-us">
+      <div class="about-image">
+        <img src="images/about-placeholder.jpg" alt="About Us image">
+      </div>
+      <div class="about-text">
+        <h2>ABOUT US</h2>
+        <p>WIP (Work in Progress) It Out is an art tutorial website dedicated to teaching the fundamentals of sketching, 
+          coloring, and illustration from lines and shapes to values and hues!</p>
+        <p><a href="mailto:themagmell@gmail.com">Contact Us!</a></p>
+      </div>
+    </section>
+
+    <section class="tutorials-banner">
+      <h2>TUTORIALS</h2>
+    </section>
+
+    <section id="tutorials" class="tutorial-list">
+      <article class="tutorial">
+        <img src="images/tutorial1.jpg" alt="Tutorial 1">
+        <div>
+          <h3>TUTORIAL 1</h3>
+          <p>Description of Tutorial</p>
+          <a href="#step-1">Click to see tutorial!</a>
+        </div>
+      </article>
+
+      <article class="tutorial">
+        <div>
+          <h3>TUTORIAL 2</h3>
+          <p>Description of Tutorial</p>
+          <a href="#step-2">Click to see tutorial!</a>
+        </div>
+        <img src="images/tutorial2.jpg" alt="Tutorial 2">
+      </article>
+
+      <article class="tutorial">
+        <img src="images/tutorial3.jpg" alt="Tutorial 3">
+        <div>
+          <h3>TUTORIAL 3</h3>
+          <p>Description of Tutorial</p>
+          <a href="#step-3">Click to see tutorial!</a>
+        </div>
+      </article>
+    </section>
+
+    <h2>All Tutorials (Merged)</h2>
+
+    <!-- STEP 1 -->
+    <details id="step-1">
+      <summary>STEP 1</summary>
+      <!-- Lessons for Step 1 -->
+      <details>
+        <summary><strong>Lesson 1:</strong> Basic Shapes &amp; Line Work</summary>
+        <div class="lesson-body">
+          <p>Steps: 1) Draw basic shapes (circles, squares, triangles). 2) Practice line weight and contour. 3) Quick exercises: 5-minute shape studies.</p>
+        </div>
+      </details>
+    </details>
+
+    <!-- STEP 2 -->
+    <details id="step-2">
+      <summary>STEP 2</summary>
+      <!-- Lessons for Step 2 -->
+      <details>
+        <summary><strong>Lesson 2:</strong> Value and shading</summary>
+        <div class="lesson-body">
+          <p>Steps: 1) Learn value scale. 2) Practice shading with a single light source. 3) Create a simple sphere study.</p>
+        </div>
+      </details>
+    </details>
+
+    <!-- STEP 3 -->
+    <details id="step-3">
+      <summary>STEP 3</summary>
+      <!-- Lessons for Step 3 -->
+      <details>
+        <summary><strong>Lesson 3:</strong> Color basics</summary>
+        <div class="lesson-body">
+          <p>Steps: 1) Identify primary/secondary colors. 2) Mix tints and shades. 3) Create a 3-color palette study.</p>
+        </div>
+      </details>
+    </details>
+
+    <!-- ADDITIONAL STEPS HERE -->
+    <details id="step-4">
+      <summary>STEP 4</summary>
+      <p><!-- the additional steps go here --></p>
+    </details>
+
+    <!-- VIDEO -->
+    <section>
+      <h2>More on Color Theory</h2>
+      <video controls width="100%">
+        <source src="media/colortheory.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- QUIZ -->
+    <section>
+      <h2>Lesson 1 Quiz</h2>
+      <form id="quiz-form">
+        <fieldset>
+          <legend>Question 1: Which element creates the illusion of depth?</legend>
+          <label><input type="radio" name="q1" value="a"> Saturation</label>
+          <label><input type="radio" name="q1" value="b"> Value / Contrast</label>
+          <label><input type="radio" name="q1" value="c"> Pattern</label>
+        </fieldset>
+        <fieldset>
+          <legend>Question 2: What is a thumbnail sketch used for?</legend>
+          <label><input type="radio" name="q2" value="a"> Mixing paint</label>
+          <label><input type="radio" name="q2" value="b"> Testing composition ideas</label>
+          <label><input type="radio" name="q2" value="c"> Drying time</label>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section"><h3>Mag Mell</h3></div>
+      <div class="footer-section"><h3>themagmell@gmail.com</h3></div>
+      <div class="footer-section"><h3>Website by Andrea To Chip, Rey Rivera and Emmanuel Jayme</h3></div>
+    </div>
+  </footer>
+
+</body>
+</html>
 

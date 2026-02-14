@@ -4,18 +4,13 @@
 <!-- HEAD SECTION OF CODE -->
 <head>
 
-  <!-- Meta Information and Title -->
-  <meta charset="utf-8">
+  <!-- Meta Information, Links and Website Title -->
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="media/wiplogo.png">
   <title>WIP-It-Out</title>
-
-  <!-- Styling -->
-  <style>
-      header {background-color: blue;}
-  </style>
 
 </head>
 
@@ -25,12 +20,16 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="header-content">
-      <h1 class="tutorial-title">Wip-It-Out</h1>
+      <div class="header-logo-container">
+        <img class="wiplogo" src="media/wiplogo.png" alt="Wip-It-Out Logo">
+        <h1 class="tutorial-title">Wip-It-Out</h1>
+      </div>
       <p class="tutorial-overview">WIP (Work in Progress) It Out is a website dedicated to introducing its viewers to the wonders of art while providing tutorials for simple art fundamentals. It offers beginner to intermediate tutorials for concepts in arts and crafts.</p>
       <nav class="main-nav" aria-label="Main navigation">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="Wip-It-Out.html#tutorials">Lessons</a></li>
+          <li><a href="#home">About Us</a></li>
+          <li><a href="Wip-It-Out.html#tutorials">Tutorials</a></li>
+          <li><a href="Wip-It-Out.html#quiz">Quiz</a></li>
         </ul>
       </nav>
     </div>
@@ -39,19 +38,18 @@
   <main class="container">
     <!-- HOME WIREFRAME: Home, About, Tutorials Preview -->
     <section id="home" class="home">
-      <!-- Large home/feature image placeholder -->
-      <img src="images/home-placeholder.jpg" alt="Home image" />
+      <img src="media/home.jpg" alt="Home image" />
     </section>
 
     <section class="about-us">
       <div class="about-image">
-        <img src="images/about-placeholder.jpg" alt="About Us image">
+        <img src="media/aboutus.jpg" alt="About Us image">
       </div>
       <div class="about-text">
         <h2>ABOUT US</h2>
         <p>WIP (Work in Progress) It Out is an art tutorial website dedicated to teaching the fundamentals of sketching, 
           coloring, and illustration from lines and shapes to values and hues!</p>
-        <p><a href="mailto:themagmell@gmail.com">Contact Us!</a></p>
+        <button href="mailto:themagmell@gmail.com">Contact Us!</button>
       </div>
     </section>
 
@@ -61,11 +59,14 @@
 
     <section id="tutorials" class="tutorial-list">
       <article class="tutorial">
-        <img src="images/tutorial1.jpg" alt="Tutorial 1">
+        <img src="media/sketching.jpg" alt="Tutorial 1">
         <div>
           <h3>TUTORIAL 1</h3>
-          <p>Description of Tutorial</p>
-          <a href="#step-1">Click to see tutorial!</a>
+          <p>
+            Our very first tutorial begins where every artwork starts--with shapes and lines! 
+            Here, we'll go through the different types of lines and shapes and how to build them into more complex sketches and bodies!
+          </p>
+          <button href="#step-1">Click to see tutorial!</button>
         </div>
       </article>
 
@@ -73,22 +74,22 @@
         <div>
           <h3>TUTORIAL 2</h3>
           <p>Description of Tutorial</p>
-          <a href="#step-2">Click to see tutorial!</a>
+          <button href="#step-2">Click to see tutorial!</button>
         </div>
-        <img src="images/tutorial2.jpg" alt="Tutorial 2">
+        <img src="media/shading.jpg" alt="Tutorial 2">
       </article>
 
       <article class="tutorial">
-        <img src="images/tutorial3.jpg" alt="Tutorial 3">
+        <img src="media/colors.jpg" alt="Tutorial 3">
         <div>
           <h3>TUTORIAL 3</h3>
           <p>Description of Tutorial</p>
-          <a href="#step-3">Click to see tutorial!</a>
+          <button href="#step-3">Click to see tutorial!</button>
         </div>
       </article>
     </section>
 
-    <h2>All Tutorials (Merged)</h2>
+    <h2>All Tutorials</h2>
 
     <!-- STEP 1 -->
     <details id="step-1">
@@ -96,8 +97,72 @@
       <!-- Lessons for Step 1 -->
       <details>
         <summary><strong>Lesson 1:</strong> Basic Shapes &amp; Line Work</summary>
+        <p>We begin our lessons by exploring the foundation of art-shapes and lines! </p>
         <div class="lesson-body">
-          <p>Steps: 1) Draw basic shapes (circles, squares, triangles). 2) Practice line weight and contour. 3) Quick exercises: 5-minute shape studies.</p>
+          <section id="lesson-1">
+            <h3>Lesson 1: Basic Shapes (Shapes and Forms) and Linework</h3>
+            
+            <p>In general, art is a subject that focuses on the creative aspect of your mind. As everyone says, “the only limit is your imagination”. However, being creative without knowing any basic fundamentals will cause you to struggle in creating art. This aspect tests your logical side, being able to ascertain how, and where to apply the basic fundamentals allows a person to think beyond the box in order to create their masterpiece.</p>
+
+            <h6>Tutorial Videos</h6>
+            <video controls width="100%">
+                <source src="media/lines.mp4" type="video/mp4">
+                Learn How To Draw Pt 1: Lines, Lines, Lines
+            </video>
+            <video controls width="100%">
+                <source src="media/shapes.mp4" type="video/mp4">
+                Learn How to Draw for Beginners - Episode 1
+            </video>
+
+            <p>Every artist must learn basic lines and shapes as the fundamentals of art come from the ability to break down complex objects into simple shapes and lines.</p>
+
+            <h4>The Elements of Art</h4>
+            <p>Art as a medium utilizes varying elements and principles as their fundamentals, we will tackle each later one by one. So, let us begin first with line and shape.</p>
+
+            <dl>
+                <dt>Line</dt>
+                <dd>Defined as two points that connect to each other. Lines can either vary in weight (how bold the line is), curvature, and straightness, however so long as it connects two points, that is still considered a line.</dd>
+
+                <dt>Shape</dt>
+                <dd>When lines are connected to each other, they form a shape. A shape is a two-dimensional object or form that contains both width and height. Do not mistake shape with form, a form is a 3D object, having length, width, and height, whereas a 2D object has only width and height.</dd>
+            </dl>
+
+            <h5>Types of Shapes</h5>
+            <dl>
+                <dt>Geometric Shapes</dt>
+                <dd>Shapes that have a clear edge or boundary defined by mathematics. These include: squares, rectangles, and circles.</dd>
+
+                <dt>Organic Shapes</dt>
+                <dd>Shapes that do not have a defined edge or boundary, and are usually found in nature. Leaves, clouds, rivers, all of these are shapes that are free-form, flowy, and natural as they do not have a rigid form.</dd>
+            </dl>
+
+            <p>Learning to draw organic shapes allows you to create more expressive art, and allows you to utilize the principles as well. Well, let us learn a quick technique called “Breaking down forms.”</p>
+
+            <dl>
+                <dt>Form</dt>
+                <dd>Lines are connected together with an additional third dimension, length or depth. This extra dimension allows objects to occupy the third-dimension, and allows us to make these objects feel more three-dimensional even if the drawing itself is two-dimensional.</dd>
+            </dl>
+
+            <p>Applying forms is as simple as adding a third dimension to your drawings. This means turning your square into a cube, a rectangle into a box, etc. Try to practice drawing simple two dimensional shapes, then turning those into three dimensional forms.</p>
+
+            <p>In order to break down forms, find any three dimensional object you want to draw and try to simplify it into very simple shapes. For example, a plant pot can be simplified into organic shapes or forms for the leaves and geometric forms for the pot. Learning to “break down forms” is an essential skill especially when it comes to learning human anatomy later on.</p>
+
+            <p>Line weight allows us to emphasize which object should be the focus of everyone’s attention, or if an object is closer or farther from the viewer.</p>
+
+            <h6>In conclusion:</h6>
+            <ul>
+                <li>Lines are two connected points</li>
+                <li>Shapes are connected lines, and are either geometric or organic.</li>
+                <li>Geometric shapes are more rigid defined edges that are based on mathematics.</li>
+                <li>Organic shapes are more free-form, not having clear edges that are based on nature.</li>
+            </ul>
+
+            <h6>References</h6>
+            <p>
+                <a href="https://guides.lib.berkeley.edu/design">Graphic Design: The Elements of Design</a><br>
+                <a href="https://www.cascadiaartmuseum.org/elements-of-art-shape/">Elements of Art: Shape</a>
+            </p>
+          </section>
         </div>
       </details>
     </details>
@@ -107,9 +172,63 @@
       <summary>STEP 2</summary>
       <!-- Lessons for Step 2 -->
       <details>
-        <summary><strong>Lesson 2:</strong> Value and shading</summary>
+        <summary><strong>Lesson 2:</strong> Value and Shading</summary>
+        <p>Lesson 2 teaches you all you need to know on shading, lighting and going from dark to light with values!</p>
         <div class="lesson-body">
-          <p>Steps: 1) Learn value scale. 2) Practice shading with a single light source. 3) Create a simple sphere study.</p>
+          <section id="lesson-2">
+            <h3>Lesson 2: Value and Shading</h3>
+
+            <h6>Tutorial Videos</h6>
+            <video controls width="100%">
+                <source src="media/values.mp4" type="video/mp4">
+                Intro to Value Drawing
+            </video>
+            <video controls width="100%">
+                <source src="media/shading1.mp4" type="video/mp4">
+                Go From Flat to Realistic Shading! Here’s How
+            </video>
+            <video controls width="100%">
+                <source src="media/shading2.mp4" type="video/mp4">
+                Basic rules of light and shadow for drawing _ Beginner's Tutorial
+            </video>
+
+            <p>Value and shading allows shapes to feel more three-dimensional, building this feeling of depth through forms. You would have to draw lines on a circle that warp to give the illusion of depth, but with values and shading, you will be able to make that illusion more convincing.</p>
+
+            <dl>
+                <dt>Value</dt>
+                <dd>Defined as the degree of lightness and darkness of your image. The higher the value, the darker the image is; the lesser the value, the lighter the image is.</dd>
+
+                <dt>Shading</dt>
+                <dd>The smoothness or transition between your varying values of your image.</dd>
+
+                <dt>Lighting</dt>
+                <dd>Defined as how illumination hits an object. Strategic use of lighting allows for objects to gain more depth.</dd>
+            </dl>
+
+            <h5>The Five Parts of Lighting</h5>
+            <dl>
+                <dt>Highlight</dt>
+                <dd>The brightest reflected light source, most of the time containing no to less value at all (white).</dd>
+
+                <dt>Mid tone</dt>
+                <dd>The second brightest reflected light source containing less to some value.</dd>
+
+                <dt>Core Shadow</dt>
+                <dd>Area of the object where light is not being hit, contains the most value of the entire object.</dd>
+
+                <dt>Reflected Light</dt>
+                <dd>Area of the object where some light from the ground reflects back to the object.</dd>
+
+                <dt>Cast shadow</dt>
+                <dd>The shadow that is casted from the light to the ground due to being blocked by the object.</dd>
+            </dl>
+
+            <h6>References</h6>
+            <p>
+                <a href="https://thevirtualinstructor.com/shading-techniques-basics.html">Shading Techniques - The Basics</a><br>
+                <a href="https://studiodeschutter.com/news/art-lighting">Art Lighting: Why It Matters</a>
+            </p>
+          </section>
         </div>
       </details>
     </details>
@@ -119,45 +238,111 @@
       <summary>STEP 3</summary>
       <!-- Lessons for Step 3 -->
       <details>
-        <summary><strong>Lesson 3:</strong> Color basics</summary>
+        <summary><strong>Lesson 3:</strong> Color Basics</summary>
+        <p>Through this lesson, you will learn what makes up a color and the different types of color combinations!</p>
         <div class="lesson-body">
-          <p>Steps: 1) Identify primary/secondary colors. 2) Mix tints and shades. 3) Create a 3-color palette study.</p>
+          
+            <h6>Tutorial Videos</h6>
+            <video controls width="100%">
+              <source src="media/colortheory2.mp4" type="video/mp4">
+              Color Theory for Noobs | Beginner Guide
+            </video>
+
+            <video controls width="100%">
+                <source src="media/colortheory.mp4" type="video/mp4">
+                Color theory explained
+            </video>
+
+            <p>Color in an image brings out personality, style, and pleasure to the eyes. To understand color, we need to look into color theory, which stems from the “color wheel.”</p>
+
+            <h4>Components of Color</h4>
+            <dl>
+                <dt>Hue</dt>
+                <dd>Defined as the different wavelengths of color. In color theory, this is what we call “hues.”</dd>
+
+                <dt>Saturation</dt>
+                <dd>It is how intense, or “present” your color is. More saturation means your color is more visible and neon.</dd>
+
+                <dt>Tones</dt>
+                <dd>A hue that is desaturated (or gray).</dd>
+
+                <dt>Value</dt>
+                <dd>How bright or dark your color is.</dd>
+
+                <dt>Tints</dt>
+                <dd>A hue that is mixed with shades of white.</dd>
+
+                <dt>Shades</dt>
+                <dd>A hue that is mixed with shades of dark.</dd>
+
+                <dt>Ambient Light</dt>
+                <dd>All of the natural light that surrounds the object based on the environment.</dd>
+            </dl>
+
+            <h4>Color Theory Concepts</h4>
+            <dl>
+                <dt>Color temperature</dt>
+                <dd>Defined by artists as how “cool” (closer to blue) or “warm” (closer to red) a color is.</dd>
+
+                <dt>Complementary</dt>
+                <dd>A color combination where you take one hue and another that equally opposes it on the color wheel.</dd>
+
+                <dt>Analogous</dt>
+                <dd>A color combination where you utilize the surrounding hues on the color wheel based on your chosen hue.</dd>
+
+                <dt>Triadic</dt>
+                <dd>A color combination that utilizes evenly and widely placed hues forming a triangle on the wheel.</dd>
+            </dl>
+
+            <h6>Next Steps for Your Journey</h6>
+            <ul>
+                <li>How to break down objects into simpler forms</li>
+                <li>Basic fundamentals of the human anatomy</li>
+                <li>How to draw poses, and dynamic poses</li>
+                <li>How to draw clothes, folds, and accessories</li>
+                <li>Mistakes that all beginner artists make</li>
+            </ul>
+
+            <h6>References</h6>
+            <p>
+                <a href="https://www.studiobinder.com/blog/what-is-ambient-light-definition/">What is Ambient Light? Definition and Examples</a><br>
+                <a href="https://learn.leighcotnoir.com/artspeak/elements-color/hue-value-saturation/">ArtSpeak: Hue, Value, Saturation</a><br>
+                <a href="https://drawpaintacademy.com/a-comprehensive-guide-to-color-theory-for-artists/">A Comprehensive Guide to Color Theory</a>
+            </p>
+          </section>
         </div>
       </details>
     </details>
 
-    <!-- ADDITIONAL STEPS HERE -->
-    <details id="step-4">
-      <summary>STEP 4</summary>
-      <p><!-- the additional steps go here --></p>
-    </details>
-
-    <!-- VIDEO -->
-    <section>
-      <h2>More on Color Theory</h2>
-      <video controls width="100%">
-        <source src="media/colortheory.mp4" type="video/mp4">
-      </video>
-    </section>
-
     <!-- QUIZ -->
-    <section>
+    <section class="quiz-container">
       <h2>Lesson 1 Quiz</h2>
-      <form id="quiz-form">
-        <fieldset>
-          <legend>Question 1: Which element creates the illusion of depth?</legend>
-          <label><input type="radio" name="q1" value="a"> Saturation</label>
-          <label><input type="radio" name="q1" value="b"> Value / Contrast</label>
-          <label><input type="radio" name="q1" value="c"> Pattern</label>
-        </fieldset>
-        <fieldset>
-          <legend>Question 2: What is a thumbnail sketch used for?</legend>
-          <label><input type="radio" name="q2" value="a"> Mixing paint</label>
-          <label><input type="radio" name="q2" value="b"> Testing composition ideas</label>
-          <label><input type="radio" name="q2" value="c"> Drying time</label>
-        </fieldset>
-        <button type="submit">Submit</button>
-      </form>
+
+      <div class="question">
+        <p><strong>Question 1:</strong> Which element creates the illusion of depth?</p>
+        <div class="options">
+          <input type="radio" name="q1" id="q1-correct" value="correct" class="quiz-radio">
+          <label for="q1-correct">Value / Contrast</label>
+          
+          <input type="radio" name="q1" id="q1-wrong1" value="wrong" class="quiz-radio">
+          <label for="q1-wrong1">Saturation</label>
+          
+          <input type="radio" name="q1" id="q1-wrong2" value="wrong" class="quiz-radio">
+          <label for="q1-wrong2">Pattern</label>
+        </div>
+
+        <div class="quiz-actions">
+          <button type="submit" class="submit-btn">Submit Answer</button>
+          
+          <input type="checkbox" id="toggle-q1" class="show-answer-checkbox">
+          <label for="toggle-q1" class="show-answer-btn">Show Answer</label>
+          
+          <div class="correct-answer">
+            <strong>Correct Answer:</strong> Value / Contrast. 
+            <p>By using light and dark, you define form and space.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -172,4 +357,3 @@
 
 </body>
 </html>
-

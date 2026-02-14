@@ -5,19 +5,16 @@ An illustration tutorial website designed for beginners and more advanced learne
 
 # What We Learned
 
-## Team 
-- Delegation of tasks
-- 
-
 ## HTML
 - Semantic tags
-- Details (dropdown features), video and image implementations
+- Details (dropdown features)
+- Implementation of video and image files
 - Navigation, headers and footers
 
 ## CSS
 - Flexbox
 - Creating and implementing custom logos
-- 
+- Media queries
 
 # Credits
 - Andrea To Chip

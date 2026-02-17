@@ -24,22 +24,21 @@
         <img class="wiplogo" src="media/wiplogo.png" alt="Wip-It-Out Logo">
         <h1 class="tutorial-title">Wip-It-Out</h1>
       </div>
-      <p class="tutorial-overview">WIP (Work in Progress) It Out is a website dedicated to introducing its viewers to the wonders of art while providing tutorials for simple art fundamentals. It offers beginner to intermediate tutorials for concepts in arts and crafts.</p>
+      <p class="tutorial-overview">
+        WIP <em>(Work in Progress)</em> It Out is a website dedicated to introducing its viewers to the wonders of art while providing tutorials for 
+        simple art fundamentals. It offers beginner to intermediate tutorials for concepts in arts and crafts.
+      </p>
       <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="#home">About Us</a></li>
-          <li><a href="Wip-It-Out.html#tutorials">Tutorials</a></li>
-          <li><a href="Wip-It-Out.html#quiz">Quiz</a></li>
+          <li><a href="#tutorials">Tutorials</a></li>
+          <li><a href="#quiz">Quizzes</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- HOME WIREFRAME: Home, About, Tutorials Preview -->
-    <section id="home" class="home">
-      <img src="media/home.jpg" alt="Home image" />
-    </section>
 
     <section class="about-us">
       <div class="about-image">
@@ -47,9 +46,14 @@
       </div>
       <div class="about-text">
         <h2>ABOUT US</h2>
-        <p>WIP (Work in Progress) It Out is an art tutorial website dedicated to teaching the fundamentals of sketching, 
-          coloring, and illustration from lines and shapes to values and hues!</p>
-        <button href="mailto:themagmell@gmail.com">Contact Us!</button>
+        <p>
+          <strong>WIP <em>(Work in Progress)</em> It Out</strong> is an art tutorial website dedicated to teaching the fundamentals of sketching, 
+          coloring, and illustration from lines and shapes to values and hues!
+
+          WIP It Out was developed by Mag Mell, meaning "plain of joy" or "plain of delights", which is a mythical, paradisiacal realm in Irish mythology. Composed of a team of three,
+          Mag Mell is dedicated to bringing you joy and delight in the form of learning about and creating art!
+        </p>
+        <button onclick="window.location.href='mailto:themagmell@gmail.com'">Contact Us!</button>
       </div>
     </section>
 
@@ -57,7 +61,7 @@
       <h2>TUTORIALS</h2>
     </section>
 
-    <section id="tutorials" class="tutorial-list">
+    <section class="tutorial-list">
       <article class="tutorial">
         <img src="media/sketching.jpg" alt="Tutorial 1">
         <div>
@@ -66,15 +70,18 @@
             Our very first tutorial begins where every artwork starts--with shapes and lines! 
             Here, we'll go through the different types of lines and shapes and how to build them into more complex sketches and bodies!
           </p>
-          <button href="#step-1">Click to see tutorial!</button>
+          <a href="#step-1" class="tutorial-btn">Click to see tutorial!</a>
         </div>
       </article>
 
       <article class="tutorial">
         <div>
           <h3>TUTORIAL 2</h3>
-          <p>Description of Tutorial</p>
-          <button href="#step-2">Click to see tutorial!</button>
+          <p>
+            Our second tutorial dives deeper into what makes space, being how we see light and dark!
+            Transform flat drawings into realistic 3D forms by learning the five parts of lighting, including highlights, core shadows, and cast shadows.
+          </p>
+          <a href="#step-2" class="tutorial-btn">Click to see tutorial!</a>
         </div>
         <img src="media/shading.jpg" alt="Tutorial 2">
       </article>
@@ -83,13 +90,16 @@
         <img src="media/colors.jpg" alt="Tutorial 3">
         <div>
           <h3>TUTORIAL 3</h3>
-          <p>Description of Tutorial</p>
-          <button href="#step-3">Click to see tutorial!</button>
+          <p>
+            The final tutorial explores the very light that makes up our world--colors!
+            Dive into the color wheel to master hue, saturation, and value, and learn to create professional palettes using analogous and complementary schemes.
+          </p>
+          <a href="#step-3" class="tutorial-btn">Click to see tutorial!</a>
         </div>
       </article>
     </section>
 
-    <h2>All Tutorials</h2>
+    <h2 id="tutorials">All Tutorials</h2>
 
     <!-- STEP 1 -->
     <details id="step-1">
@@ -116,7 +126,7 @@
 
             <p>Every artist must learn basic lines and shapes as the fundamentals of art come from the ability to break down complex objects into simple shapes and lines.</p>
 
-            <h4>The Elements of Art</h4>
+            <h6>The Elements of Art</h6>
             <p>Art as a medium utilizes varying elements and principles as their fundamentals, we will tackle each later one by one. So, let us begin first with line and shape.</p>
 
             <dl>
@@ -127,7 +137,7 @@
                 <dd>When lines are connected to each other, they form a shape. A shape is a two-dimensional object or form that contains both width and height. Do not mistake shape with form, a form is a 3D object, having length, width, and height, whereas a 2D object has only width and height.</dd>
             </dl>
 
-            <h5>Types of Shapes</h5>
+            <h6>Types of Shapes</h6>
             <dl>
                 <dt>Geometric Shapes</dt>
                 <dd>Shapes that have a clear edge or boundary defined by mathematics. These include: squares, rectangles, and circles.</dd>
@@ -205,7 +215,7 @@
                 <dd>Defined as how illumination hits an object. Strategic use of lighting allows for objects to gain more depth.</dd>
             </dl>
 
-            <h5>The Five Parts of Lighting</h5>
+            <h6>The Five Parts of Lighting</h6>
             <dl>
                 <dt>Highlight</dt>
                 <dd>The brightest reflected light source, most of the time containing no to less value at all (white).</dd>
@@ -255,7 +265,7 @@
 
             <p>Color in an image brings out personality, style, and pleasure to the eyes. To understand color, we need to look into color theory, which stems from the “color wheel.”</p>
 
-            <h4>Components of Color</h4>
+            <h6>Components of Color</h6>
             <dl>
                 <dt>Hue</dt>
                 <dd>Defined as the different wavelengths of color. In color theory, this is what we call “hues.”</dd>
@@ -279,7 +289,7 @@
                 <dd>All of the natural light that surrounds the object based on the environment.</dd>
             </dl>
 
-            <h4>Color Theory Concepts</h4>
+            <h6>Color Theory Concepts</h6>
             <dl>
                 <dt>Color temperature</dt>
                 <dd>Defined by artists as how “cool” (closer to blue) or “warm” (closer to red) a color is.</dd>
@@ -315,41 +325,110 @@
     </details>
 
     <!-- QUIZ -->
-    <section class="quiz-container">
+    <section class="quiz-container" id="quiz">
       <h2>Lesson 1 Quiz</h2>
 
       <div class="question">
-        <p><strong>Question 1:</strong> Which element creates the illusion of depth?</p>
+        What do you call shapes that do not have a defined edge or boundary, and are usually found in nature?
         <div class="options">
-          <input type="radio" name="q1" id="q1-correct" value="correct" class="quiz-radio">
-          <label for="q1-correct">Value / Contrast</label>
-          
-          <input type="radio" name="q1" id="q1-wrong1" value="wrong" class="quiz-radio">
-          <label for="q1-wrong1">Saturation</label>
-          
-          <input type="radio" name="q1" id="q1-wrong2" value="wrong" class="quiz-radio">
-          <label for="q1-wrong2">Pattern</label>
+          <div>
+            <input type="radio" name="q1" id="q1-wrong1" value="wrong">
+            <label for="q1-correct">Geometric Shapes</label>
+          </div>
+          <div>
+            <input type="radio" name="q1" id="q1-correct" value="correct">
+            <label for="q1-wrong1">Organic Shapes</label>
+          </div>
+          <div>
+            <input type="radio" name="q1" id="q1-wrong2" value="wrong">
+            <label for="q1-wrong2">Forms</label>
+          </div>
         </div>
 
         <div class="quiz-actions">
-          <button type="submit" class="submit-btn">Submit Answer</button>
-          
           <input type="checkbox" id="toggle-q1" class="show-answer-checkbox">
           <label for="toggle-q1" class="show-answer-btn">Show Answer</label>
           
           <div class="correct-answer">
-            <strong>Correct Answer:</strong> Value / Contrast. 
-            <p>By using light and dark, you define form and space.</p>
+            <strong>Correct Answer:</strong> Organic Shapes 
+            <p>Organic shapes are free-flowing, irregular, and asymmetrical forms inspired by nature. These include leaves, clouds, and human figures.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="quiz-container">
+      <h2>Lesson 2 Quiz</h2>
+
+        <div class="question">
+          What element of art refers to the lightness or darkness of a color, or the range of tones from white to black?
+          <div class="options">
+            <div>
+              <input type="radio" name="q1" id="q1-correct" value="correct">
+              <label for="q1-correct">Values</label>
+            </div>
+            <div>
+              <input type="radio" name="q1" id="q1-wrong1" value="correct">
+              <label for="q1-wrong1">Contrast</label>
+            </div>
+            <div>
+              <input type="radio" name="q1" id="q1-wrong2" value="wrong">
+              <label for="q1-wrong2">Saturation</label>
+            </div>
+          </div>
+
+        <div class="quiz-actions">
+          <input type="checkbox" id="toggle-q2" class="show-answer-checkbox">
+          <label for="toggle-q2" class="show-answer-btn">Show Answer</label>
+          
+          <div class="correct-answer">
+            <strong>Correct Answer:</strong> Values 
+            <p>Values refer to the range of lightness and darkness of a color. By using light and dark, you can define form and space in an artwork.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-container">
+      <h2>Lesson 3 Quiz</h2>
+
+        <div class="question">
+          What is the name of the color combination where you utilize the surrounding hues on the color wheel based on your chosen hue?
+          <div class="options">
+            <div>
+              <input type="radio" name="q1" id="q1-wrong1" value="wrong">
+              <label for="q1-correct">Complementary</label>
+            </div>
+            <div>
+              <input type="radio" name="q1" id="q1-wrong2" value="wrong">
+              <label for="q1-wrong1">Triadic</label>
+            </div>
+            <div>
+              <input type="radio" name="q1" id="q1-correct" value="correct">
+              <label for="q1-wrong2">Analogous</label>
+            </div>
+          </div>
+
+          <div class="quiz-actions">
+            <input type="checkbox" id="toggle-q3" class="show-answer-checkbox">
+            <label for="toggle-q3" class="show-answer-btn">Show Answer</label>
+            
+            <div class="correct-answer">
+              <strong>Correct Answer:</strong> Analogous
+              <p>When using the analogous color scheme, you pick one hue and then select 2-3 hues in the color wheel surrounding that selected hue.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div class="footer-section"><h3>Mag Mell</h3></div>
+      <div class="footer-section">
+        <img src="media/mmlogo.png" alt="Mag Mell Logo" class="mmlogo">
+      </div>
       <div class="footer-section"><h3>themagmell@gmail.com</h3></div>
       <div class="footer-section"><h3>Website by Andrea To Chip, Rey Rivera and Emmanuel Jayme</h3></div>
     </div>

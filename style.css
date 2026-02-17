@@ -1,24 +1,48 @@
+/* Color Palette */
 :root {
     --dark-blue: #151f50;
     --sea-blue: #0a57a4;
     --light-blue: #6397db;
     --white: #ffffff;
     --off-white: #cfe1ee;
+    --correct-green: #d4edda;
+    --wrong-red: #f8d7da;
 }
+
+
 
 /* General Layout */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', Tahoma, sans-serif; /* Paragraph Font */
-    background-color: var(--off-white);
-    color: var(--dark-blue);
+    font-family: 'Open Sans', Tahoma, sans-serif;
     line-height: 1.6;
+    background: linear-gradient(rgba(21, 31, 80, 0.7), rgba(21, 31, 80, 0.7)), 
+                url('media/home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif; /* Header Font */
+    font-family: 'Playfair Display', serif;
     color: var(--dark-blue);
+}
+
+h6 {
+    font-size: 16px;
+}
+
+/* Header & Nav */
+header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1, header p {
+    color: var(--white);
+    margin-top: 30px;
 }
 
 .header-logo-container {
@@ -36,43 +60,15 @@ h1, h2, h3 {
     background-color: white;
 }
 
-.tutorial-title {
-    font-family: 'Pinyon Script', cursive; /* Calligraphy for Branding */
-    font-size: 4rem;
-    margin: 0;
-    line-height: 1;
-}
-
-.tutorial-overview {
-    margin: 0 50px;
-}
-
-button {
-    background-color: var(--sea-blue);
-    color: white;
-}
-
-/* Header & Nav */
-header {
-    background-color: var(--dark-blue);
-    color: var(--white);
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-header h1, header p {
-    color: var(--white);
-}
-
 nav ul {
-    margin-top: 20px;
+    margin-top: 40px;
     list-style: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 40px;
 }
 
 nav a {
@@ -82,12 +78,102 @@ nav a {
     text-transform: uppercase;
 }
 
+
+
+/* About Us */
+.about-us {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.about-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+/* Tutorial Overview */
+.tutorial-title {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.tutorial-overview {
+    margin: 0 50px;
+}
+
+.tutorial-list a {
+    background-color: var(--sea-blue);
+    color: white;
+    margin-top: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+/* Buttons */
+button, .show-answer-btn {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--sea-blue);
+    color: white;
+}
+
+
+
 /* Tutorial Sections */
+.tutorial-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tutorial h3 {
+    margin-top: -20px;
+}
+
+.tutorial {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.tutorial-list img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.tutorial-list div {
+    width: 50%;
+}
+
+.tutorial-list button {
+    margin-top: 30px;
+}
+
 .container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background: var(--white);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
 }
 
@@ -100,11 +186,7 @@ nav a {
     border-bottom: 1px solid var(--off-white);
 }
 
-.tutorial-list img {
-    width: 250px;
-    height: auto;
-    border-radius: 5px;
-}
+
 
 /* Details & Summaries */
 details {
@@ -124,8 +206,9 @@ summary {
     font-family: 'Playfair Display', serif;
 }
 
-/* --- QUIZ STYLING --- */
 
+
+/* -Quiz Styling */
 .quiz-container {
     background-color: var(--white);
     padding: 20px 40px;
@@ -135,6 +218,19 @@ summary {
     max-width: 600px;
     margin: 20px auto;
     border: 1px solid var(--off-white);
+}
+
+.options div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.quiz-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .question {
@@ -184,46 +280,8 @@ summary {
     display: block;
 }
 
-.show-answer-checkbox:checked ~ .show-answer-btn {
-    background-color: #28a745;
-}
-
 .show-answer-checkbox:checked ~ .show-answer-btn::before {
     content: "Hide ";
-}
-
-
-/* Container for buttons to sit side-by-side */
-.quiz-actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
-    flex-wrap: wrap;
-}
-
-/* Submit Button Styling */
-.submit-btn {
-    background-color: var(--dark-blue);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
-}
-
-.question:has(input[value="correct"]:checked) {
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-    transition: background-color 0.3s ease;
-}
-
-.question:has(input[value="wrong"]:checked) {
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-    transition: background-color 0.3s ease;
 }
 
 .show-answer-checkbox:checked ~ .show-answer-btn {
@@ -235,19 +293,49 @@ summary {
 }
 
 
-/* Footer */
 
-footer {
+/* Footer */
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--dark-blue);
-    color: var(--white);
-    text-align: center;
-    padding: 2rem;
-    margin-top: 40px;
+    color: white; 
+    padding: 3rem;
+    max-height: 150px;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    width: 100%;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
 }
 
 .footer-section h3 {
-    color: var(--light-blue);
-    font-size: 0.9rem;
+    color: white; 
 }
 
+.footer-logo-text {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
+.mmlogo {
+    margin-bottom: -50px;
+    height: 300px;
+    width: auto;
+}
 

@@ -1,4 +1,5 @@
 /* Color Palette */
+
 :root {
     --dark-blue: #151f50;
     --sea-blue: #0a57a4;
@@ -12,15 +13,22 @@
 
 
 /* General Layout */
-body {
+
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Open Sans', Tahoma, sans-serif;
     line-height: 1.6;
     background: linear-gradient(rgba(21, 31, 80, 0.7), rgba(21, 31, 80, 0.7)), 
                 url('media/home.jpg') no-repeat center center fixed;
     background-size: cover;
-    min-height: 100vh;
+
 }
 
 h1, h2, h3 {
@@ -28,11 +36,21 @@ h1, h2, h3 {
     color: var(--dark-blue);
 }
 
-h6 {
-    font-size: 16px;
+h3 {
+    font-size: 21px;
+    margin: 30px 0;
 }
 
+h4 {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+
+
 /* Header & Nav */
+
 header {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -81,11 +99,14 @@ nav a {
 
 
 /* About Us */
+
 .about-us {
     display: flex;
     align-items: center;
     gap: 30px;
     margin: 40px 0;
+    padding: 15px;
+    border-bottom: 1px solid var(--off-white);
 }
 
 .about-image img {
@@ -97,6 +118,18 @@ nav a {
 
 
 /* Tutorial Overview */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 .tutorial-title {
     font-family: 'Pinyon Script', cursive;
     font-size: 4rem;
@@ -122,6 +155,7 @@ nav a {
 
 
 /* Buttons */
+
 button, .show-answer-btn {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -136,6 +170,7 @@ button, .show-answer-btn {
 
 
 /* Tutorial Sections */
+
 .tutorial-list {
     display: flex;
     flex-direction: column;
@@ -168,7 +203,7 @@ button, .show-answer-btn {
 
 .container {
     display: flex;
-    flex: 1;
+    flex: 1 0 auto;
     flex-direction: column;
     max-width: 1100px;
     margin: 40px auto;
@@ -189,6 +224,7 @@ button, .show-answer-btn {
 
 
 /* Details & Summaries */
+
 details {
     background: var(--off-white);
     margin: 10px 0;
@@ -204,11 +240,24 @@ summary {
     font-weight: bold;
     cursor: pointer;
     font-family: 'Playfair Display', serif;
+    font-size: 21px;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+dl dd {
+    margin: 5px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 
 
 /* -Quiz Styling */
+
 .quiz-container {
     background-color: var(--white);
     padding: 20px 40px;
@@ -259,7 +308,6 @@ summary {
     display: inline-block;
     margin-top: 10px;
     font-size: 0.9rem;
-    transition: background 0.3s ease;
 }
 
 .show-answer-btn:hover {
@@ -295,6 +343,7 @@ summary {
 
 
 /* Footer */
+
 .site-footer {
     display: flex;
     align-items: center;
@@ -333,9 +382,14 @@ summary {
     margin: 0;
 }
 
+.crop-container {
+    width: 250px;
+    height: 150px;
+    overflow: hidden; 
+    margin-bottom: 90px;
+}
+
 .mmlogo {
-    margin-bottom: -50px;
     height: 300px;
     width: auto;
 }
-

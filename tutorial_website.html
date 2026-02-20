@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- HEAD SECTION OF CODE -->
+<!-- HEAD -->
 <head>
-
-  <!-- Meta Information, Links and Website Title -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="media/wiplogo.png">
   <title>WIP-It-Out</title>
-
 </head>
 
-<!-- BODY SECTION OF CODE -->
+<!-- BODY -->
 <body>
 
   <!-- HEADER -->
@@ -30,7 +27,7 @@
       </p>
       <nav class="main-nav" aria-label="Main navigation">
         <ul>
-          <li><a href="#home">About Us</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#tutorials">Tutorials</a></li>
           <li><a href="#quiz">Quizzes</a></li>
         </ul>
@@ -38,9 +35,11 @@
     </div>
   </header>
 
+  <!-- MAIN CONTAINER -->
   <main class="container">
 
-    <section class="about-us">
+    <!-- ABOUT US -->
+    <section class="about-us" id="about">
       <div class="about-image">
         <img src="media/aboutus.jpg" alt="About Us image">
       </div>
@@ -57,11 +56,13 @@
       </div>
     </section>
 
+    <!-- TUTORIALS -->
     <section class="tutorials-banner">
       <h2>TUTORIALS</h2>
     </section>
 
     <section class="tutorial-list">
+      <h2 class="visually-hidden">Tutorial Overview</h2> 
       <article class="tutorial">
         <img src="media/sketching.jpg" alt="Tutorial 1">
         <div>
@@ -99,34 +100,32 @@
       </article>
     </section>
 
+    <!-- ALL TUTORIALS/LESSONS -->
     <h2 id="tutorials">All Tutorials</h2>
 
-    <!-- STEP 1 -->
     <details id="step-1">
       <summary>STEP 1</summary>
-      <!-- Lessons for Step 1 -->
       <details>
         <summary><strong>Lesson 1:</strong> Basic Shapes &amp; Line Work</summary>
         <p>We begin our lessons by exploring the foundation of art-shapes and lines! </p>
         <div class="lesson-body">
           <section id="lesson-1">
             <h3>Lesson 1: Basic Shapes (Shapes and Forms) and Linework</h3>
-            
             <p>In general, art is a subject that focuses on the creative aspect of your mind. As everyone says, “the only limit is your imagination”. However, being creative without knowing any basic fundamentals will cause you to struggle in creating art. This aspect tests your logical side, being able to ascertain how, and where to apply the basic fundamentals allows a person to think beyond the box in order to create their masterpiece.</p>
 
-            <h6>Tutorial Videos</h6>
-            <video controls width="100%">
+            <h4>Tutorial Videos</h4><br>
+            <video controls style="width: 100%;">
                 <source src="media/lines.mp4" type="video/mp4">
                 Learn How To Draw Pt 1: Lines, Lines, Lines
             </video>
-            <video controls width="100%">
+            <video controls style="width: 100%;">
                 <source src="media/shapes.mp4" type="video/mp4">
                 Learn How to Draw for Beginners - Episode 1
             </video>
 
             <p>Every artist must learn basic lines and shapes as the fundamentals of art come from the ability to break down complex objects into simple shapes and lines.</p>
 
-            <h6>The Elements of Art</h6>
+            <h4>The Elements of Art</h4>
             <p>Art as a medium utilizes varying elements and principles as their fundamentals, we will tackle each later one by one. So, let us begin first with line and shape.</p>
 
             <dl>
@@ -137,7 +136,7 @@
                 <dd>When lines are connected to each other, they form a shape. A shape is a two-dimensional object or form that contains both width and height. Do not mistake shape with form, a form is a 3D object, having length, width, and height, whereas a 2D object has only width and height.</dd>
             </dl>
 
-            <h6>Types of Shapes</h6>
+            <h4>Types of Shapes</h4>
             <dl>
                 <dt>Geometric Shapes</dt>
                 <dd>Shapes that have a clear edge or boundary defined by mathematics. These include: squares, rectangles, and circles.</dd>
@@ -159,7 +158,7 @@
 
             <p>Line weight allows us to emphasize which object should be the focus of everyone’s attention, or if an object is closer or farther from the viewer.</p>
 
-            <h6>In conclusion:</h6>
+            <h4>In conclusion:</h4>
             <ul>
                 <li>Lines are two connected points</li>
                 <li>Shapes are connected lines, and are either geometric or organic.</li>
@@ -167,7 +166,7 @@
                 <li>Organic shapes are more free-form, not having clear edges that are based on nature.</li>
             </ul>
 
-            <h6>References</h6>
+            <h4>References</h4>
             <p>
                 <a href="https://guides.lib.berkeley.edu/design">Graphic Design: The Elements of Design</a><br>
                 <a href="https://www.cascadiaartmuseum.org/elements-of-art-shape/">Elements of Art: Shape</a>
@@ -177,31 +176,20 @@
       </details>
     </details>
 
-    <!-- STEP 2 -->
     <details id="step-2">
       <summary>STEP 2</summary>
-      <!-- Lessons for Step 2 -->
       <details>
         <summary><strong>Lesson 2:</strong> Value and Shading</summary>
-        <p>Lesson 2 teaches you all you need to know on shading, lighting and going from dark to light with values!</p>
         <div class="lesson-body">
           <section id="lesson-2">
             <h3>Lesson 2: Value and Shading</h3>
-
-            <h6>Tutorial Videos</h6>
-            <video controls width="100%">
+            <h4>Tutorial Videos</h4><br>
+            <video controls style="width: 100%;">
                 <source src="media/values.mp4" type="video/mp4">
-                Intro to Value Drawing
             </video>
-            <video controls width="100%">
+            <video controls style="width: 100%;">
                 <source src="media/shading1.mp4" type="video/mp4">
-                Go From Flat to Realistic Shading! Here’s How
             </video>
-            <video controls width="100%">
-                <source src="media/shading2.mp4" type="video/mp4">
-                Basic rules of light and shadow for drawing _ Beginner's Tutorial
-            </video>
-
             <p>Value and shading allows shapes to feel more three-dimensional, building this feeling of depth through forms. You would have to draw lines on a circle that warp to give the illusion of depth, but with values and shading, you will be able to make that illusion more convincing.</p>
 
             <dl>
@@ -215,7 +203,7 @@
                 <dd>Defined as how illumination hits an object. Strategic use of lighting allows for objects to gain more depth.</dd>
             </dl>
 
-            <h6>The Five Parts of Lighting</h6>
+            <h4>The Five Parts of Lighting</h4>
             <dl>
                 <dt>Highlight</dt>
                 <dd>The brightest reflected light source, most of the time containing no to less value at all (white).</dd>
@@ -233,7 +221,7 @@
                 <dd>The shadow that is casted from the light to the ground due to being blocked by the object.</dd>
             </dl>
 
-            <h6>References</h6>
+            <h4>References</h4>
             <p>
                 <a href="https://thevirtualinstructor.com/shading-techniques-basics.html">Shading Techniques - The Basics</a><br>
                 <a href="https://studiodeschutter.com/news/art-lighting">Art Lighting: Why It Matters</a>
@@ -243,29 +231,20 @@
       </details>
     </details>
 
-    <!-- STEP 3 -->
     <details id="step-3">
       <summary>STEP 3</summary>
-      <!-- Lessons for Step 3 -->
       <details>
         <summary><strong>Lesson 3:</strong> Color Basics</summary>
-        <p>Through this lesson, you will learn what makes up a color and the different types of color combinations!</p>
         <div class="lesson-body">
-          
-            <h6>Tutorial Videos</h6>
-            <video controls width="100%">
+          <section id="lesson-3">
+            <h3>Lesson 3: Color Basics</h3>
+            <h4>Tutorial Videos</h4><br>
+            <video controls style="width: 100%;">
               <source src="media/colortheory2.mp4" type="video/mp4">
-              Color Theory for Noobs | Beginner Guide
             </video>
-
-            <video controls width="100%">
-                <source src="media/colortheory.mp4" type="video/mp4">
-                Color theory explained
-            </video>
-
             <p>Color in an image brings out personality, style, and pleasure to the eyes. To understand color, we need to look into color theory, which stems from the “color wheel.”</p>
 
-            <h6>Components of Color</h6>
+            <h4>Components of Color</h4>
             <dl>
                 <dt>Hue</dt>
                 <dd>Defined as the different wavelengths of color. In color theory, this is what we call “hues.”</dd>
@@ -289,7 +268,7 @@
                 <dd>All of the natural light that surrounds the object based on the environment.</dd>
             </dl>
 
-            <h6>Color Theory Concepts</h6>
+            <h4>Color Theory Concepts</h4>
             <dl>
                 <dt>Color temperature</dt>
                 <dd>Defined by artists as how “cool” (closer to blue) or “warm” (closer to red) a color is.</dd>
@@ -304,7 +283,7 @@
                 <dd>A color combination that utilizes evenly and widely placed hues forming a triangle on the wheel.</dd>
             </dl>
 
-            <h6>Next Steps for Your Journey</h6>
+            <h4>Next Steps for Your Journey</h4>
             <ul>
                 <li>How to break down objects into simpler forms</li>
                 <li>Basic fundamentals of the human anatomy</li>
@@ -313,7 +292,7 @@
                 <li>Mistakes that all beginner artists make</li>
             </ul>
 
-            <h6>References</h6>
+            <h4>References</h4>
             <p>
                 <a href="https://www.studiobinder.com/blog/what-is-ambient-light-definition/">What is Ambient Light? Definition and Examples</a><br>
                 <a href="https://learn.leighcotnoir.com/artspeak/elements-color/hue-value-saturation/">ArtSpeak: Hue, Value, Saturation</a><br>
@@ -324,31 +303,24 @@
       </details>
     </details>
 
-    <!-- QUIZ -->
+    <!-- QUIZZES -->
     <section class="quiz-container" id="quiz">
       <h2>Lesson 1 Quiz</h2>
-
       <div class="question">
         What do you call shapes that do not have a defined edge or boundary, and are usually found in nature?
         <div class="options">
           <div>
             <input type="radio" name="q1" id="q1-wrong1" value="wrong">
-            <label for="q1-correct">Geometric Shapes</label>
+            <label for="q1-wrong1">Geometric Shapes</label>
           </div>
           <div>
             <input type="radio" name="q1" id="q1-correct" value="correct">
-            <label for="q1-wrong1">Organic Shapes</label>
-          </div>
-          <div>
-            <input type="radio" name="q1" id="q1-wrong2" value="wrong">
-            <label for="q1-wrong2">Forms</label>
+            <label for="q1-correct">Organic Shapes</label>
           </div>
         </div>
-
         <div class="quiz-actions">
           <input type="checkbox" id="toggle-q1" class="show-answer-checkbox">
           <label for="toggle-q1" class="show-answer-btn">Show Answer</label>
-          
           <div class="correct-answer">
             <strong>Correct Answer:</strong> Organic Shapes 
             <p>Organic shapes are free-flowing, irregular, and asymmetrical forms inspired by nature. These include leaves, clouds, and human figures.</p>
@@ -359,28 +331,21 @@
 
     <section class="quiz-container">
       <h2>Lesson 2 Quiz</h2>
-
-        <div class="question">
-          What element of art refers to the lightness or darkness of a color, or the range of tones from white to black?
-          <div class="options">
-            <div>
-              <input type="radio" name="q1" id="q1-correct" value="correct">
-              <label for="q1-correct">Values</label>
-            </div>
-            <div>
-              <input type="radio" name="q1" id="q1-wrong1" value="correct">
-              <label for="q1-wrong1">Contrast</label>
-            </div>
-            <div>
-              <input type="radio" name="q1" id="q1-wrong2" value="wrong">
-              <label for="q1-wrong2">Saturation</label>
-            </div>
+      <div class="question">
+        What element of art refers to the lightness or darkness of a color?
+        <div class="options">
+          <div>
+            <input type="radio" name="q2" id="q2-correct" value="correct">
+            <label for="q2-correct">Values</label>
           </div>
-
+          <div>
+            <input type="radio" name="q2" id="q2-wrong1" value="wrong">
+            <label for="q2-wrong1">Contrast</label>
+          </div>
+        </div>
         <div class="quiz-actions">
           <input type="checkbox" id="toggle-q2" class="show-answer-checkbox">
           <label for="toggle-q2" class="show-answer-btn">Show Answer</label>
-          
           <div class="correct-answer">
             <strong>Correct Answer:</strong> Values 
             <p>Values refer to the range of lightness and darkness of a color. By using light and dark, you can define form and space in an artwork.</p>
@@ -396,16 +361,16 @@
           What is the name of the color combination where you utilize the surrounding hues on the color wheel based on your chosen hue?
           <div class="options">
             <div>
-              <input type="radio" name="q1" id="q1-wrong1" value="wrong">
-              <label for="q1-correct">Complementary</label>
+              <input type="radio" name="q3" id="q3-wrong1" value="wrong">
+              <label for="q3-correct">Complementary</label>
             </div>
             <div>
-              <input type="radio" name="q1" id="q1-wrong2" value="wrong">
-              <label for="q1-wrong1">Triadic</label>
+              <input type="radio" name="q3" id="q3-wrong2" value="wrong">
+              <label for="q3-wrong1">Triadic</label>
             </div>
             <div>
-              <input type="radio" name="q1" id="q1-correct" value="correct">
-              <label for="q1-wrong2">Analogous</label>
+              <input type="radio" name="q3" id="q3-correct" value="correct">
+              <label for="q3-wrong2">Analogous</label>
             </div>
           </div>
 
@@ -427,7 +392,9 @@
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-section">
-        <img src="media/mmlogo.png" alt="Mag Mell Logo" class="mmlogo">
+        <div class="crop-container">
+          <img src="media/mmlogo.png" alt="Mag Mell Logo" class="mmlogo">
+        </div>
       </div>
       <div class="footer-section"><h3>themagmell@gmail.com</h3></div>
       <div class="footer-section"><h3>Website by Andrea To Chip, Rey Rivera and Emmanuel Jayme</h3></div>
